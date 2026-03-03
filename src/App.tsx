@@ -1,8 +1,13 @@
+import { RouterProvider } from "react-router-dom";
+import { ConfigProvider } from "antd";
+import { antdConfig } from "./theme/antdConfig";
+import router from "./router";
+
 const App = () => {
   return (
-    <div className="bg-red-500">
-      App, Hello My Dear sister. Zeetta viela san
-    </div>
+    <ConfigProvider theme={antdConfig}>
+      <RouterProvider router={router} />
+    </ConfigProvider>
   );
 };
 
