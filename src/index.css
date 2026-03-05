@@ -15,6 +15,10 @@
   --color-pending: #faad14;
   --color-in-review: #1677ff;
   --color-error: #ff4d4f;
+  --color-scheduled: #1677ff;
+  --color-in-progress: #faad14;
+  --color-completed: #52c41a;
+  --color-cancelled: #ff4d4f;
 
   --font-sans: "Plus Jakarta Sans", sans-serif;
 

@@ -57,5 +57,23 @@ export const antdConfig: ThemeConfig = {
       defaultBg: "#F2F2F2",
       defaultColor: "#767676",
     },
+    Table: {
+      colorBgContainer: "transparent",
+      colorText: "#ffffff",
+      colorTextHeading: "#767676",
+      borderColor: "rgba(255,255,255,0.06)",
+      headerBg: "transparent",
+      rowHoverBg: "rgba(255,255,255,0.04)",
+      headerSplitColor: "transparent",
+      fontSize: 13,
+      cellPaddingBlockSM: 14,
+    },
+    Pagination: {
+      colorPrimary: "#43B17E",
+      colorPrimaryHover: "#3a9e6e",
+      colorText: "#767676",
+      colorBgContainer: "transparent",
+      colorBorder: "rgba(255,255,255,0.1)",
+    },
   },
 };
