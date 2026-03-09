@@ -188,7 +188,7 @@ const StatCard = ({ stat }: { stat: StatItem }) => (
     padding="px-5 py-3"
     className="flex flex-col items-start gap-2"
   >
-    <div className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0 bg-[#6FCF97] text-dark-green">
+    <div className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0 text-white bg-gradient-green">
       {stat.icon}
     </div>
     <p className="text-dark-gray text-xs mb-2">{stat.label}</p>
@@ -212,10 +212,7 @@ const Dashboard = () => {
         {/* Row 1, Col 1-2 — Welcome card */}
         <CardComponent
           padding="p-6"
-          className="lg:col-span-2 border-none! flex flex-col justify-between"
-          style={{
-            background: "linear-gradient(135deg, #123139 0%, #268d62 100%)",
-          }}
+          className="lg:col-span-2 border-none! flex flex-col justify-between bg-gradient-green"
         >
           <div>
             <p className="text-white/60 text-sm mb-1">Welcome back,</p>

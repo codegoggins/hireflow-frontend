@@ -38,8 +38,14 @@ export const antdConfig: ThemeConfig = {
       paddingInline: 12,
     },
     Select: {
+      colorBorder: "rgba(255,255,255,0.15)",
+      colorBgContainer: "rgba(255,255,255,0.05)",
+      colorText: "#ffffff",
+      colorTextPlaceholder: "#767676",
       activeBorderColor: "#43B17E",
       hoverBorderColor: "#43B17E",
+      activeShadow: "none",
+      activeOutlineColor: "transparent",
     },
     DatePicker: {
       activeBorderColor: "#43B17E",

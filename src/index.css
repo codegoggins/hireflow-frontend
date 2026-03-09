@@ -19,6 +19,10 @@
   --color-in-progress: #faad14;
   --color-completed: #52c41a;
   --color-cancelled: #ff4d4f;
+  --color-under-review: #faad14;
+  --color-phone-screen: #1677ff;
+  --color-hired: #52c41a;
+  --color-interview-scheduled: #7c5cfc;
 
   --font-sans: "Plus Jakarta Sans", sans-serif;
 
@@ -31,6 +35,10 @@
 
 @layer base {
   body {
-    @apply font-sans bg-light-gray text-main-black;
+    @apply font-sans bg-black text-main-black;
   }
+}
+
+@utility bg-gradient-green {
+  background: linear-gradient(135deg, #123139 0%, #268d62 100%);
 }
