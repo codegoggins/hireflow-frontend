@@ -10,6 +10,7 @@ import {
   LuFileText,
   LuSettings,
   LuLogOut,
+  LuShield,
 } from "react-icons/lu";
 import Logo from "./Logo";
 
@@ -22,6 +23,8 @@ const menuItems = [
   { label: "Analytics", path: "/analytics", icon: LuChartBar },
   { label: "Departments", path: "/departments", icon: LuBuilding2 },
   { label: "Reports", path: "/reports", icon: LuFileText },
+  { label: "Users", path: "/users", icon: LuUsers },
+  { label: "Roles", path: "/roles", icon: LuShield },
 ];
 
 const Sidebar = () => {

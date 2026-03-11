@@ -12,6 +12,8 @@ import analyticsRoutes from "../views/analytics/router";
 import departmentsRoutes from "../views/departments/router";
 import reportsRoutes from "../views/reports/router";
 import settingsRoutes from "../views/settings/router";
+import usersRoutes from "../views/users/router";
+import rolesRoutes from "../views/roles/router";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +37,8 @@ const router = createBrowserRouter([
           { path: "/departments", children: departmentsRoutes },
           { path: "/reports", children: reportsRoutes },
           { path: "/settings", children: settingsRoutes },
+          { path: "/users", children: usersRoutes },
+          { path: "/roles", children: rolesRoutes },
         ],
       },
     ],
