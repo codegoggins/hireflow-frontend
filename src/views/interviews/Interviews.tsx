@@ -353,27 +353,16 @@ const Interviews = () => {
                 </div>
 
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center gap-3">
-                      <h3 className="text-white text-sm font-semibold">
-                        {interview.candidateName}
-                      </h3>
-                      <StatusTag status={interview.status} />
-                    </div>
+                  <div className="flex items-center gap-3 mb-2">
+                    <h3 className="text-white text-sm font-semibold">
+                      {interview.candidateName}
+                    </h3>
                   </div>
 
                   <div className="flex items-center gap-5 text-xs text-dark-gray mb-3 flex-wrap">
                     <span className="flex items-center gap-1.5">
                       <LuBriefcase size={13} />
                       {interview.role}
-                    </span>
-                    <span className="flex items-center gap-1.5">
-                      <LuCalendarDays size={13} />
-                      {interview.time}
-                    </span>
-                    <span className="flex items-center gap-1.5">
-                      <LuTimer size={13} />
-                      {interview.duration}
                     </span>
                     <span className="flex items-center gap-1.5">
                       <LuUser size={13} />
@@ -394,6 +383,18 @@ const Interviews = () => {
                   <p className="text-dark-gray text-xs leading-relaxed">
                     {interview.description}
                   </p>
+                </div>
+
+                <div className="flex flex-col items-end gap-2 shrink-0 ml-4">
+                  <StatusTag status={interview.status} />
+                  <span className="flex items-center gap-1.5 text-xs text-dark-gray">
+                    <LuCalendarDays size={13} />
+                    {interview.time}
+                  </span>
+                  <span className="flex items-center gap-1.5 text-xs text-dark-gray">
+                    <LuTimer size={13} />
+                    {interview.duration}
+                  </span>
                 </div>
               </div>
             </CardComponent>
